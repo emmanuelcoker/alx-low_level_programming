@@ -7,6 +7,6 @@
 int main(void)
 {
     char *CFILE = "0-main.c";
-    printf("export CFILE=%c", CFILE);
+    printf("export CFILE=%s", CFILE);
     return (0);
 }
