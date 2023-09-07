@@ -1,5 +1,11 @@
 	.file	"2-main.c"
 	.text
+	.section	.rodata
+.LC0:
+	.string	"2-main.c"
+.LC1:
+	.string	"export CFILE=%s"
+	.text
 	.globl	main
 	.type	main, @function
 main:
@@ -11,8 +17,16 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	leaq	.LC0(%rip), %rax
+	movq	%rax, -8(%rbp)
+	movq	-8(%rbp), %rax
+	movq	%rax, %rsi
+	leaq	.LC1(%rip), %rdi
 	movl	$0, %eax
-	popq	%rbp
+	call	printf@PLT
+	movl	$0, %eax
+	leave
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
