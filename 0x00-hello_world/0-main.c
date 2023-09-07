@@ -7,6 +7,6 @@
 int main(void)
 {
     char *CFILE = "0-main.c";
-    printf("export CFILE=%s", CFILE);
+    printf("export CFILE=%s;  ./0-preprocessor", CFILE);
     return (0);
 }
