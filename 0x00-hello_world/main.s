@@ -1,8 +1,8 @@
-	.file	"2-main.c"
+	.file	"main.c"
 	.text
 	.section	.rodata
 .LC0:
-	.string	"2-main.c"
+	.string	"main.s"
 .LC1:
 	.string	"export CFILE=%s"
 	.text
