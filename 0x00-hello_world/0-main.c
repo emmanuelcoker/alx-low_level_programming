@@ -6,6 +6,7 @@
  */
 int main(void)
 {
-    char CFILE = "0-main.c"
+    char CFILE = "0-main.c";
+    printf("%c", CFILE);
     return (0);
 }
