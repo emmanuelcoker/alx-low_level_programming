@@ -4,6 +4,13 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Description: a program that generates random number and tells the type
+ * Return: Return 0 on success
+ */
+
 int main(void)
 {
 	int n;
