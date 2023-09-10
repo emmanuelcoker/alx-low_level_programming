@@ -1,13 +1,14 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Description: program to determing list digit of numbers
- * Return: Always return 0 for success
+ *Description: program to determing list digit of numbers
+ *Return: Always return 0 for success
  */
 
 int main(void)
