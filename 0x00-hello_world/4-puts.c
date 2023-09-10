@@ -1,11 +1,10 @@
 #include<stdio.h>
 /**
-*main - Entry point
-(*
- *Description: a program to print text using puts)?
-*Return: Always 0
+ *main - Entry point
+ *
+ *Return: Always 0
 
-*/
+ */
 
 int main(void)
 {
