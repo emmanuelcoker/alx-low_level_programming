@@ -1,6 +1,10 @@
 #include<stdio.h>
 /**
- *a program to print text using puts
+  * main  - Entry point 
+ (*
+  *Description: a program to print text using puts)?
+  *Return: Always 0
+
  */
 
 int main(void)
