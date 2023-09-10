@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    char *CFILE = "main.s";
+    char *CFILE = "2-main.s";
     printf("export CFILE=%s", CFILE);
     return (0);
 }
