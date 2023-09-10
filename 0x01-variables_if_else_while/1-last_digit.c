@@ -14,20 +14,22 @@
 int main(void)
 {
 	int n;
+	int remainer;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n % 10 == 0)
+	remainder = n % 10;
+	if (remainder == 0)
 	{
-		printf("is %d and is 0\n", n);
+		printf("Last digit of %d is %d and is 0\n", n, remainder);
 	}
 	else
 	{
-		if ((n % 10 < 6) && (n % 10 != 0))
-			printf("is %d and is less than 6 and not 0\n", n);
+		if ((remainder < 6) && (remainder != 0))
+			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, remainder);
 		else
-			printf("is %d and is greater than 5\n", n);
+			printf("Last digit of %d is %d and is greater than 5\n", n, remainder);
 	}
 	return (0);
 }
