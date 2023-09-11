@@ -14,7 +14,7 @@ int main(void)
 
         while (i < 26)
         {
-		if (alphabets[i] !== 'q' || alphabets[i] !== 'e')
+		if (alphabets[i] != 'q' || alphabets[i] != 'e')
 			putchar(alphabets[i]);
                 i++;
         }
