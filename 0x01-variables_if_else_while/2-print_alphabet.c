@@ -2,8 +2,8 @@
 /**
   *main - Entry to the program
   *
-  *description: a program that transforms a letter into lowercase
-  *return: Always 0 for success
+  *Description: a program that transforms a letter into lowercase
+  *Return: Always 0 for success
   */
 
 int main(void)
