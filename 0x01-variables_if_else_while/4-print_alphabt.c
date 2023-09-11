@@ -9,15 +9,15 @@
 
 int main(void)
 {
-        char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
-        int i = 0;
+	char alphabets[] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 0;
 
-        while (i < 26)
-        {
+	while (i < 26)
+	{
 		if (alphabets[i] != 'q' && alphabets[i] != 'e')
 			putchar(alphabets[i]);
-                i++;
-        }
-        putchar('\n');
-        return (0);
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }
