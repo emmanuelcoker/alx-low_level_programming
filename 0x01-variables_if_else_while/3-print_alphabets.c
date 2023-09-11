@@ -15,10 +15,8 @@ int main(void)
 	while (i < 52)
 	{
 		putchar(alphabets[i]);
-		if (alphabets[i] == 'z' || alphabets[i] == 'Z')
-		{
-			putchar('/n');
-		}
+		i++;
 	}
+	putchar('\n');
 	return (0);
 }
