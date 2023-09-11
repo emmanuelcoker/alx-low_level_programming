@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char hexa_digits[] = "0123456789ABCDE";
+	char hexa_digits[] = "0123456789abcdef";
 	int i = 0;
 
 	while (i < 16)
