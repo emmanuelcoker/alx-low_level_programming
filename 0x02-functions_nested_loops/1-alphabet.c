@@ -10,13 +10,12 @@
 
 void print_alphabet()
 {
-	char *alphabets = "abcdefghijklmnopqrstuvwxyz";
+	char ch = 'a';
 
-	printf("%s\n", alphabets);
-}
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	while (ch <= 'z')
+	{
+		_putchar(ch);
+		ch++;
+	}
+	_putchar('\n');
 }
