@@ -8,6 +8,13 @@
  * Return : always return 0 when successful
  */
 
+void print_alphabet()
+{
+	char *alphabets = "abcdefghijklmnopqrstuvwxyz";
+
+	printf("%s\n", alphabets);
+}
+
 int main(void)
 {
 	print_alphabet();
