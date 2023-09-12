@@ -4,6 +4,7 @@
 /**
  * _islower - check if letter is lowercase
  *
+ * @c: ascii code value for the character
  * Description: a functionn to check if character is lowercase
  * Return: return 1 if true and 0 if false
  */
