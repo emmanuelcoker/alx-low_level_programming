@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * main - Enntry into the program
+ *main - Enntry into the program
  *
- * Description: a program that prints
- * Return : always return 0 when successful
+ *Description: a program that prints
+ *Return : always return 0 when successful
  */
 
 void print_alphabet(void)
