@@ -6,14 +6,13 @@
  *
  * @n: integer number
  * Description: convert signed integer to absolute val
- * Return: return 0 when successful
+ * Return: return abscolute value or n
  */
 
 int _abs(int n)
 {
-	if (n >= 0)
-		printf("%d\n", n);
+	if (n > 0)
+		return (n);
 	else
-		printf("%d\n", (n * -1));
-	return (0);
+		return (n * -1);
 }
