@@ -13,7 +13,7 @@ int _islower(int c)
 	char letter_a = 'a';
 	char letter_z = 'z';
 
-	if (c >= letter_a || c <= letter_z)
+	if (c >= letter_a && c <= letter_z)
 		return (1);
 	else
 		return (0);
