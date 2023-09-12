@@ -2,3 +2,4 @@ void print_alphabet();
 int _putchar(char);
 void print_alphabet_x10(void);
 int _islower(int);
+int _isalpha(int);
