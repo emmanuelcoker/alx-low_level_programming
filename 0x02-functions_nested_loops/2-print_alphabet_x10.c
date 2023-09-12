@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * print_alphabet_x10: subroutine to print alphabet
+ *print_alphabet_x10: subroutine to print alphabet
  *
- * Description: print alphabets ten times
- * Return: return void
+ *Description: print alphabets ten times
+ *Return: return void
  */
 
 
@@ -20,6 +21,7 @@ void print_alphabet_x10(void)
 			_putchar(ch);
 			ch++;
 		}
+		ch = 'a';
 		_putchar('\n');
 		i++;
 	}
