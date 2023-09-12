@@ -8,7 +8,7 @@
  * Return : always return 0 when successful
  */
 
-void print_alphabet()
+void print_alphabet(void)
 {
 	char ch = 'a';
 
