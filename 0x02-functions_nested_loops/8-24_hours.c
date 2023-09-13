@@ -5,7 +5,7 @@
  * jack_bauer - display minutes of the day
  *
  * description: print minutes of the day with new line
- * Return: return 0 when successful
+ * Return: return nothing when successful
  */
 
 void jack_bauer(void)
@@ -16,13 +16,18 @@ void jack_bauer(void)
 	for (hours = 0; hours < 24; hours++)
 	{
 		for (minutes = 0; minutes < 60; minutes++)
+		{
 			_putchar('0' + hours);
 			if (hours < 10)
+			{
 				_putchar('0' + 0);
+			}
 			_putchar(58);
 			_putchar('0' + minutes);
 			if (minutes < 10)
+			{
 				_putchar('0' + 0);
+			}
 			_putchar('\n');
 		}
 	}
