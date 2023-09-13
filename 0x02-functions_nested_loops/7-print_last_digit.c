@@ -11,10 +11,18 @@
 
 int print_last_digit(int n)
 {
-	if (n > 9)
-		printf("%d\n", n % 10);
-		return (n % 10);
-	else 
-		_putchar((n % 10) + '0');
-		return (n);
+	int k;
+
+	if (n > 0)
+	{
+		k =  n % 10;
+		_putchar(k + 'o');
+		return (k);
+	}
+	else
+	{	k = -1 * (n % 10);
+		_putchar(k + 'o');
+		return (k);
+	}
+
 }
