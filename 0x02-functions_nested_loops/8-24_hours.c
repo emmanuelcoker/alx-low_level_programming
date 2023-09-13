@@ -9,4 +9,20 @@
 
 void jack_bauer(void)
 {
+	int hours;
+	int minutes;
+
+	for (hours = 0; hours < 24; hours++)
+	{
+		for (minutes = 0; minutes < 60; minutes++)
+			_putchar('0' + hours);
+			if (hours < 10)
+				_putchar('0' + 0);
+			_putchar(58);
+			_putchar('0' + minutes);
+			if (minutes < 10)
+				_putchar('0' + 0);
+			_putchar('\n');
+		}
+	}
 }
