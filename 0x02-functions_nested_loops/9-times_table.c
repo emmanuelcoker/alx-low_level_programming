@@ -20,9 +20,10 @@ void times_table(void)
 		for (col = 0; col <= limit; col++)
 		{
 			multiple = row * col;
-			_putchar(multiple + '0');
+			_putchar((multiple / 10) + '0');
+			_putchar((multiple % 10) + '0');
 			_putchar(',');
-			_putchar(' ');
+			_putchar('   ');
 		}
 		_putchar('\n');
 	}
