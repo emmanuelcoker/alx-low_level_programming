@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,10 +7,10 @@
  * Return: return 0 when successful
  */
 
-int main(void )
+int main(void)
 {
 	int zero = 0;
-	
+
 	positive_or_negative(zero);
 	return (0);
 }
