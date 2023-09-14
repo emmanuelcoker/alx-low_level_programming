@@ -24,13 +24,19 @@ void times_table(void)
 			{
 				_putchar((multiple / 10) + '0');
 				_putchar((multiple % 10) + '0');
-				_putchar(',');
+				if (col != limit)
+					_putchar(',');
+				else 
+					continue;
 				_putchar(' ');
 			}
 			else
 			{
 				_putchar(multiple + '0');
-				_putchar(',');
+				if (col != limit)
+					_putchar(',');
+				else
+					continue;
 				_putchar(' ');
 				_putchar(' ');
 			}
