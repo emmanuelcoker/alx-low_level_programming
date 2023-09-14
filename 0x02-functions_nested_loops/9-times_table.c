@@ -37,8 +37,15 @@ void times_table(void)
 					_putchar(',');
 				else
 					continue;
-				_putchar(' ');
-				_putchar(' ');
+				if ((col + 1) * (row + 1) >= 10)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
