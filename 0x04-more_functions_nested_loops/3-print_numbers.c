@@ -4,7 +4,7 @@
  * print_numbers - print 0 to 9
  *
  * Description: print numbers from 0 to 9 then a new line
- * Return: return type is void
+ * Return: no return
  */
 
 void print_numbers(void)
