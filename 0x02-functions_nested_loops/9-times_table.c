@@ -26,7 +26,7 @@ void times_table(void)
 				_putchar((multiple % 10) + '0');
 				if (col != limit)
 					_putchar(',');
-				else 
+				else
 					continue;
 				_putchar(' ');
 			}
@@ -37,6 +37,7 @@ void times_table(void)
 					_putchar(',');
 				else
 					continue;
+				_putchar(' ');
 				_putchar(' ');
 				_putchar(' ');
 			}
