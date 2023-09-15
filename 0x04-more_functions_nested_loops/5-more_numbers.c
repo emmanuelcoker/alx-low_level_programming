@@ -25,6 +25,7 @@ void more_numbers(void)
 			{
 				_putchar(ch + '0');
 			}
+			ch++;
 		}
 		ch = 0;
 		_putchar('\n');
