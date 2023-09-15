@@ -19,12 +19,8 @@ void more_numbers(void)
 			if (ch >= 10)
 			{
 				_putchar((ch / 10) + '0');
+			}
 				_putchar((ch % 10) + '0');
-			}
-			else
-			{
-				_putchar(ch + '0');
-			}
 			ch++;
 		}
 		ch = 0;
