@@ -10,8 +10,8 @@ void print_diagonal(int n)
 {
 	int tab = 0;
 	int i = 1;
-
-	while (i <= n)
+	
+	while (i <= n && n > 0)
 	{
 		_putchar('\\');
 		while (i > tab)
