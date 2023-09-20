@@ -11,11 +11,10 @@ void puts_half(char *str)
 	int i = 0;
 	int count;
 
-	/*while (str[i] != '\0')*/
-	/*{*/
-		/*i++;*/
-	/*}*/
-	i = _strlen(str);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
 
 	count = (i / 2) + (i % 2);
 	while (count < i)
