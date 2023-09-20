@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - concatenate string
+ * *_strcat - concatenate string
  * @desc: result string
  * @src: string to concantenate with desc
  * Return: return pointer to desc
