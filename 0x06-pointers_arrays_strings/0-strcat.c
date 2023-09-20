@@ -2,7 +2,7 @@
 
 /**
  * *_strcat - concatenate string
- * @desc: result string
+ * @dest: result string
  * @src: string to concantenate with desc
  * Return: return pointer to desc
  */
