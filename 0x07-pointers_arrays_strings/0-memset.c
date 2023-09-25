@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_memset - replicate stdlib memset
+ * _memset - replicate stdlib memset
  * @s: buffer
  * @b: bytes
  * @n: number of bytes
