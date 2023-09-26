@@ -11,7 +11,6 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 	unsigned int j = 0;
-	unsigned int result = 0;
 
 	while (*(s + i) != '\0')
 	{
@@ -20,7 +19,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(s + i) == *(accept + j))
 			{
-				result++;
 				break;
 			}
 			j++;
@@ -32,5 +30,5 @@ unsigned int _strspn(char *s, char *accept)
 		i++;
 	}
 
-	return (result);
+	return (i);
 }
