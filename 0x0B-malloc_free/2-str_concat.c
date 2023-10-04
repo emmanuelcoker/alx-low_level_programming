@@ -56,7 +56,7 @@ char *concat_str(char *s1, char *s2)
 
 	if (s1 != NULL && s2 == NULL)
 	{
-		result[i] = ' ';
+		result[i] = '\0';
 	}
 
 	return (result);
