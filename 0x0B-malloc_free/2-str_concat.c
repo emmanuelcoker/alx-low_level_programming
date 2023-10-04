@@ -3,11 +3,10 @@
 
 
 /**
- * *str_concat - concatenate two strings
- * @s1: dest
- * @s2: source
+ * check_str_len - count string length
+ * @c: string
  *
- * Return: return pointer to new string.
+ * Return: return number of characters.
  */
 
 int check_str_len(char *c)
@@ -22,6 +21,13 @@ int check_str_len(char *c)
 	return (j);
 }
 
+/**
+ * *concat_str - concatenate two strings
+ * @s1: dest
+ * @s2: source
+ *
+ * Return: return pointer to new string.
+ */
 char *concat_str(char *s1, char *s2)
 {
 	char *result;
@@ -29,7 +35,7 @@ char *concat_str(char *s1, char *s2)
 	unsigned int j = 0;
 
 	j = check_str_len(s1) + check_str_len(s2);
-	result =  malloc(sizeof(char) * (j));
+	result =  malloc(sizeof(char) * (j + 1));
 
 	if (result == NULL)
 		return (NULL);
