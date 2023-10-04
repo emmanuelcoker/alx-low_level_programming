@@ -68,6 +68,13 @@ char *concat_str(char *s1, char *s2)
 	return (result);
 }
 
+/**
+ * *str_concat - concatenate two strings
+ * @s1: dest
+ * @s2: source
+ *
+ * Return: return pointer to new string.
+ */
 char *str_concat(char *s1, char *s2)
 {
 	char *result;
