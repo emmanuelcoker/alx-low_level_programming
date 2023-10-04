@@ -65,7 +65,6 @@ char *concat_str(char *s1, char *s2)
 char *str_concat(char *s1, char *s2)
 {
 	char *result;
-	unsigned int i = 0, j = 0;
 
 	result = concat_str(s1, s2);
 
