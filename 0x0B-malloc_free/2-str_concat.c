@@ -9,38 +9,65 @@
  *
  * Return: return pointer to new string.
  */
-char *str_concat(char *s1, char *s2)
+
+int check_str_len(char *c)
+{
+	unsigned int j = 0;
+
+	if (c != NULL)
+	{
+		while (c[j] != '\0')
+			j++;
+	}
+	return (j);
+}
+
+char *concat_str(char *s1, char *s2)
 {
 	char *result;
-	unsigned int i = 0, j = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
-	while (s1[j] != '\0')
-		j++;
-
-	while (s2[j] != '\0')
-		j++;
-
+	j = check_str_len(s1) + check_str_len(s2);
 	result =  malloc(sizeof(char) * (j));
 
 	if (result == NULL)
 		return (NULL);
 
-	while (s1[i] != '\0')
+	if (s1 != NULL)
 	{
-		result[i] = s1[i];
-		i++;
+		while (s1[i] != '\0')
+		{
+			result[i] = s1[i];
+			i++;
+		}
 	}
 
 	j = 0;
 
-	while (s2[j] != '\0')
+	if (s2 != NULL)
 	{
-		result[i + j] = s2[j];
-		j++;
+		while (s2[j] != '\0')
+		{
+			result[i + j] = s2[j];
+			j++;
+		}
 	}
+
+	if (s1 != NULL && s2 == NULL)
+	{
+		result[i] = ' ';
+	}
+
+	return (result);
+}
+
+char *str_concat(char *s1, char *s2)
+{
+	char *result;
+	unsigned int i = 0, j = 0;
+
+	result = concat_str(s1, s2);
 
 	return (result);
 }
