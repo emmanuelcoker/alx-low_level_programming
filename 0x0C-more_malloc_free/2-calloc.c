@@ -19,6 +19,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	total =  nmemb * size;
 	ptr = malloc(total);
 
+	if (ptr == NULL)
+		return (NULL);
 	for (i = 0; i < total; i++)
 		ptr[i] = 0;
 
