@@ -22,9 +22,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	for (name_length = 0; name[name_length] != '\0'; name_length++)
+	for (name_length = 0; name[name_length]; name_length++)
 		;
-	for (owner_length = 0; owner[owner_length] != '\0'; owner_length++)
+	for (owner_length = 0; owner[owner_length]; owner_length++)
 		;
 
 	dog_info->name = malloc(sizeof(name) * (name_length + 1));
