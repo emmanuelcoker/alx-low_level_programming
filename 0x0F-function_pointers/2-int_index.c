@@ -8,10 +8,10 @@
  * @size: size of the array
  * @cmp: function pointer
  * Return: return -1 if an error occurs and the index if true
-*/
+ */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int i;
+	int i;
 
 	if (array && size && cmp)
 	{
